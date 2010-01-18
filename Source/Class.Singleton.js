@@ -19,7 +19,7 @@ provides: [Class.Singleton]
 ...
 */
 
-var Class.Singleton = new Class({
+Class.Singleton = new Class({
 
 	initialize: function(classDefinition, options){
 		var singletonClass = new Class(classDefinition);
