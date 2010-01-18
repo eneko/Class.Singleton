@@ -29,7 +29,7 @@ Singletons also work when building complex classes using inheritance, mixins, et
 	var BaseClass = new Class({
 		initialize: function() {
 			// Initialization code here
-			console.log('BaseClass initialized...');
+			console.log('BaseClass initialized.');
 		},
 		method1: function() {
 			// some code
@@ -40,7 +40,7 @@ Singletons also work when building complex classes using inheritance, mixins, et
 		Extends: BaseClass,
 		initialize: function() {
 			this.parent();
-			console.log('MySingleton);
+			console.log('MySingleton initialized.');
 		},
 		method1: function() {
 			this.parent();
