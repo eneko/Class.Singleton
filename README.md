@@ -3,6 +3,7 @@ Class.Singleton
 
 Class.Singleton defines and instantiates a singleton class.
 
+
 How to use
 ----------
 
