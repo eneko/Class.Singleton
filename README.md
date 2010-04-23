@@ -3,6 +3,8 @@ Class.Singleton
 
 Class.Singleton defines and instantiates a singleton class.
 
+![Screenshot](http://github.com/eneko/Class.Singleton/raw/master/screenshot.jpg)
+
 How to use
 ----------
 
