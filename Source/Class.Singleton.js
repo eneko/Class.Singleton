@@ -1,18 +1,17 @@
 /*
 ---
 
-script: Chain.Singleton.js
+script: Class.Singleton.js
 
-description: Defines and instantiates a singleton Class.
+description: Defines a singleton Class.
 
 license: MIT-style license.
 
 authors:
 - Eneko Alonso
 
-requires: 
+requires:
 - core:1.2.4/Class
-- /MooTools.More
 
 provides: [Class.Singleton]
 
@@ -21,9 +20,13 @@ provides: [Class.Singleton]
 
 Class.Singleton = new Class({
 
-	initialize: function(classDefinition, options){
-		var singletonClass = new Class(classDefinition);
-		return new singletonClass(options);
+	initialize: function(classDefinition, classOptions){
+		this.singletonClass = new Class(classDefinition);
+		this.classOptions = classOptions;
+	},
+
+	getInstance: function() {
+		return this.instance || new this.singletonClass(this.classOptions);
 	}
 
 });
