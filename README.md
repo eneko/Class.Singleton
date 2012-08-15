@@ -22,6 +22,19 @@ Class.Singleton objects can be defines as any Mootools class, taking advantage o
 		}
 	});
 
+To obtain the singleton object, use getInstance:
+
+	var foo = MySingleton.getInstance().method1();
+
+Alternatively, the instance can be assigned to the global variable instead
+of the class:
+
+	var MySingleton = new Class.Singleton({
+		// ...
+	}).getInstance();
+
+	var foo = MySingleton.method1();
+
 
 Inheritance
 -----------
